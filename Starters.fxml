@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StarterController">
+   <children>
+      <Label layoutX="293.0" text="Starters" textFill="#b29a22">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="31.0" />
+         </font>
+      </Label>
+      <HBox layoutX="136.0" layoutY="102.0" prefHeight="100.0" prefWidth="450.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/starter1.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="starterButton1" layoutX="37.0" layoutY="25.0" mnemonicParsing="false" onAction="#setInfoStarter1" prefHeight="50.0" prefWidth="350.0" text="Satrter 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="136.0" layoutY="218.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/starter2.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="starterButton2" layoutX="37.0" layoutY="25.0" mnemonicParsing="false" onAction="#setInfoStarter2" prefHeight="50.0" prefWidth="350.0" text="Satrter 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="136.0" layoutY="335.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/starter3.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="starterButton3" layoutX="37.0" layoutY="25.0" mnemonicParsing="false" onAction="#setInfoStarter3" prefHeight="50.0" prefWidth="350.0" text="Satrter 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="136.0" layoutY="453.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/starter4.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="starterButton4" layoutX="37.0" layoutY="25.0" mnemonicParsing="false" onAction="#setInfoStarter4" prefHeight="50.0" prefWidth="350.0" text="Satrter 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button fx:id="goBackToMenu" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#SatrtersToMenuBack" text="Menu" textFill="#111111">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

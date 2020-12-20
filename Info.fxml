@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.infoController">
+   <children>
+      <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="23.0" prefWidth="500.0" text="Starters" textAlignment="CENTER" textFill="#c98c08">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="146.0" maxWidth="450.0" prefWidth="450.0" text="Name of the Thing " textFill="#ebe4e4">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="226.0" text="Caloric value : " textFill="WHITE" AnchorPane.leftAnchor="210.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="438.0" layoutY="226.0" text="810 " textFill="#f8f7f7" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="227.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="473.0" layoutY="226.0" text="cal." textFill="#fffdfd" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="226.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="291.0" text="£" textFill="#fcf9f9">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="326.0" layoutY="291.0" text="00.00" textFill="#fcfafa">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="infoBack" layoutX="240.0" layoutY="403.0" mnemonicParsing="false" onAction="#Back_info_Menu" text="Menu">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="InfoOrder" layoutX="378.0" layoutY="403.0" mnemonicParsing="false" onAction="#OrderObject" text="Order">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SuccessController">
+   <children>
+      <Label layoutX="169.0" layoutY="53.0" text="My Restaurant" textFill="#eeb808">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="191.0" text="Thank you for your arrival" textFill="#fcfcfc">
+         <font>
+            <Font name="Lucida Fax Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="268.0" text="Your order will be at your table Shortly." textFill="#f5f3f3">
+         <font>
+            <Font name="System Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="341.0" text="Be Patient." textFill="#fcfcfc">
+         <font>
+            <Font name="Lucida Fax Italic" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="successOK" layoutX="271.0" layoutY="451.0" mnemonicParsing="false" onAction="#SuccessToMenuBack" prefWidth="160.0" text="Ok">
+         <font>
+            <Font name="Lucida Fax Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="271.0" layoutY="144.0" text="Table #  0" textFill="#fffefe">
+         <font>
+            <Font name="Lucida Fax Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="tableNo" layoutX="381.0" layoutY="144.0" text="0" textFill="#fffefe">
+         <font>
+            <Font name="Lucida Fax Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

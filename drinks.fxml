@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.drinkController">
+   <children>
+      <Label fx:id="drinksLabel" layoutX="283.0" text="Drinks" textFill="#dba31a">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="108.0" layoutY="97.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fx:id="drinkImage1" fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/drink1.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="drinkButton1" layoutX="34.0" layoutY="25.0" mnemonicParsing="false" onAction="#setInfoDrink1" prefHeight="50.0" prefWidth="350.0" text="Drink 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="108.0" layoutY="212.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/drink2.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="drinkButton2" layoutX="34.0" layoutY="16.0" mnemonicParsing="false" onAction="#setInfoDrink2" prefHeight="50.0" prefWidth="350.0" text="Drink 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="108.0" layoutY="325.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/drink3.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="drinkButton3" layoutX="34.0" layoutY="16.0" mnemonicParsing="false" onAction="#setInfoDrink3" prefHeight="50.0" prefWidth="350.0" text="Drink 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="108.0" layoutY="440.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/coke.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="drinkButton4" layoutX="34.0" layoutY="16.0" mnemonicParsing="false" onAction="#setInfoDrink4" prefHeight="50.0" prefWidth="350.0" text="Drink 1">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#BackFromDrinkToMenu" text="Menu" textFill="#171717">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

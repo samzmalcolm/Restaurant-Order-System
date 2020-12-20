@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="182.0" text="My Restaurant" textAlignment="CENTER" textFill="#d0960e" AnchorPane.leftAnchor="182.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="67.0" text="Menu" textFill="#e10303" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="67.0">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="130.0" layoutY="103.0" prefHeight="70.0" prefWidth="450.0" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="103.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/menu_starter.jpg" />
+               </image></ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="starterButton" layoutX="40.0" layoutY="20.0" mnemonicParsing="false" onAction="#goToStarterOptions" prefHeight="50.0" prefWidth="300.0" text="Starters" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="130.0" layoutY="200.0" prefHeight="100.0" prefWidth="450.0" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/menu_maincourse.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="40.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToMainCourseOptions" prefHeight="50.0" prefWidth="300.0" text="Main Course" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="130.0" layoutY="300.0" prefHeight="100.0" prefWidth="450.0" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="300.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/menu_dessert.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="40.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToDessertOptions" prefHeight="50.0" prefWidth="300.0" text="Desserts" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="130.0" layoutY="400.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/drink1.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="40.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToDrinkOptions" prefHeight="50.0" prefWidth="300.0" text="Drinks" textAlignment="CENTER" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button layoutX="275.0" layoutY="526.0" mnemonicParsing="false" onAction="#goToConfirmOrder" text="Confirm Order" textFill="#141414">
+         <font>
+            <Font name="Lucida Fax Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

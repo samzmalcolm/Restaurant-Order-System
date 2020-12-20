@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.confirmOrderController">
+   <children>
+      <Label layoutX="261.0" layoutY="54.0" text="Your Order " textFill="#f8f5f5">
+         <font>
+            <Font name="Lucida Fax Demibold" size="31.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewOrder" prefHeight="170.0" prefWidth="400.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="110.0">
+        <columns>
+          <TableColumn fx:id="colomn1" prefWidth="300.0" text="Name" />
+          <TableColumn fx:id="colomn2" prefWidth="99.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="136.0" layoutY="315.0" text="Table Number" textFill="#f8f6f6">
+         <font>
+            <Font name="Lucida Bright Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="369.0" text="Number of Dinners" textFill="#fcf8f8">
+         <font>
+            <Font name="Lucida Bright Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderConfirm" layoutX="381.0" layoutY="528.0" mnemonicParsing="false" onAction="#OrderConfirmation" prefWidth="150.0" text="Confirm">
+         <font>
+            <Font name="Lucida Fax Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="211.0" layoutY="433.0" text="Total      £" textFill="WHITE">
+         <font>
+            <Font name="Lucida Fax Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalLabel" layoutX="365.0" layoutY="435.0" text="00.00" textFill="#f5f3f3">
+         <font>
+            <Font name="Lucida Fax Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderConfirmBack" layoutX="186.0" layoutY="528.0" mnemonicParsing="false" onAction="#Back_confirmOrder_Menu" prefWidth="150.0" text="Back">
+         <font>
+            <Font name="Lucida Fax Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="200.0" layoutY="489.0" text="You have'nt selected any Item yet." textFill="#f20404">
+         <font>
+            <Font name="Lucida Fax Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tableNumberText" layoutX="336.0" layoutY="314.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="dinnerNumbers" layoutX="336.0" layoutY="368.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label fx:id="emptyTable" layoutX="519.0" layoutY="318.0" text="Empty Text Field" textFill="#f80808" />
+      <Label fx:id="invalidTable" layoutX="348.0" layoutY="292.0" text="* Invalid Input" textFill="#f80a0a" />
+      <Label fx:id="emptyDinner" layoutX="519.0" layoutY="372.0" text="Empty Text Field" textFill="#f80808" />
+      <Label fx:id="invalidDinner" layoutX="344.0" layoutY="351.0" text="* Invalid Input" textFill="#f80a0a" />
+   </children>
+</AnchorPane>
